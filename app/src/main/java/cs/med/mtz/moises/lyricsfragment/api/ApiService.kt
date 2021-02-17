@@ -10,9 +10,7 @@ interface ApiService {
         @Path("valueSong") value: String
     ):GetSuggestedSongs
 
-    /**
-     *
-     */
+
     @GET("v1/{artist}/{song}")
     suspend fun getLyricSong(
         @Path("artist") artist: String,
